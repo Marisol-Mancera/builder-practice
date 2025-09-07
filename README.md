@@ -54,12 +54,7 @@ src
 <img width="1188" height="937" alt="Diagrama-builder drawio" src="https://github.com/user-attachments/assets/1f61e4c4-d2ca-4024-9867-72f5c88ca00b" />
 
 ---
-## Estado de la práctica
 
-Esta entrega implementa el patrón **Builder** sobre la entidad `House`, permitiendo construir variantes configurables (garage, garden, swimmingPool, fancyStatues).  
-Los **tests unitarios** siguen el enfoque AAA y el objetivo de **≥ 70%** de cobertura.  
-El **diagrama de clases** incluido corresponde a la implementación actual.  
-La evidencia de cobertura se adjunta en la sección **Cobertura de pruebas**.
 
 ## Autoría
 **Marisol Mancera**
