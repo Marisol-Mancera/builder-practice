@@ -1,6 +1,6 @@
 package dev.marisol.builder_practice.builder;
 
-import dev.marisol.builder_practice.entity.House;
+import dev.marisol.builder_practice.entity.*;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,20 +1,22 @@
 package dev.marisol.builder_practice.entity;
 
-public final class House {
+public class House {
+
     private int rooms;
     private int floors;
-    private boolean garage;
-    private boolean garden;
-    private boolean swimmingPool;
-    private boolean fancyStatues;
 
-    private House(int rooms, int floors, boolean garage, boolean garden, boolean swimmingPool, boolean fancyStatues) {
-        this.rooms = rooms;
-        this.floors = floors;
-        this.garage = garage;
-        this.garden = garden;
-        this.swimmingPool = swimmingPool;
-        this.fancyStatues = fancyStatues;
+    private Boolean hasGarage;
+    private Boolean hasGarden;
+    private Boolean hasSwimmingPool;
+    private Boolean hasFancyStatues;
+
+    public House() {
+        this.rooms = 0;
+        this.floors = 0;
+        this.hasGarage = false;
+        this.hasGarden = false;
+        this.hasSwimmingPool = false;
+        this.hasFancyStatues = false;
     }
 
     public int getRooms() {
@@ -25,20 +27,59 @@ public final class House {
         return floors;
     }
 
-   public boolean hasGarage() {
-        return garage;
+    public Boolean getHasGarage() {
+        return hasGarage;
+    }
+
+    public Boolean getHasGarden() {
+        return hasGarden;
+    }
+
+    public Boolean getHasSwimmingPool() {
+        return hasSwimmingPool;
+    }
+
+    public Boolean getHasFancyStatues() {
+        return hasFancyStatues;
+    }
+
+    public boolean hasGarage() {
+        return Boolean.TRUE.equals(hasGarage);
     }
 
     public boolean hasGarden() {
-        return garden;
+        return Boolean.TRUE.equals(hasGarden);
     }
 
     public boolean hasSwimmingPool() {
-        return swimmingPool;
+        return Boolean.TRUE.equals(hasSwimmingPool);
     }
 
     public boolean hasFancyStatues() {
-        return fancyStatues;
+        return Boolean.TRUE.equals(hasFancyStatues);
     }
-        
+
+    public void setRooms(int rooms) {
+        this.rooms = rooms;
+    }
+
+    public void setFloors(int floors) {
+        this.floors = floors;
+    }
+
+    public void setHasGarage(Boolean hasGarage) {
+        this.hasGarage = hasGarage;
+    }
+
+    public void setHasGarden(Boolean hasGarden) {
+        this.hasGarden = hasGarden;
+    }
+
+    public void setHasSwimmingPool(Boolean hasSwimmingPool) {
+        this.hasSwimmingPool = hasSwimmingPool;
+    }
+
+    public void setHasFancyStatues(Boolean hasFancyStatues) {
+        this.hasFancyStatues = hasFancyStatues;
+    }
 }
