@@ -2,7 +2,6 @@ package dev.marisol.builder_practice.builder;
 
 import dev.marisol.builder_practice.entity.House;
 
-
 public interface HouseBuilder {
 
     HouseBuilder reset();
