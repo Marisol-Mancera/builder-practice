@@ -38,7 +38,7 @@ class DefaultHouseBuilderTest {
         assertFalse(house.hasFancyStatues());
     }
 
-     @Test
+    @Test
     void shouldEnableGarageOnly_whenWithGarage() {
         DefaultHouseBuilder builder = new DefaultHouseBuilder();
 
@@ -53,7 +53,7 @@ class DefaultHouseBuilderTest {
         assertFalse(house.hasFancyStatues());
     }
 
-     @Test
+    @Test
     void shouldEnableGarageOnly_whenWithGarden() {
         DefaultHouseBuilder builder = new DefaultHouseBuilder();
 
@@ -62,11 +62,26 @@ class DefaultHouseBuilderTest {
                 .withGarden()
                 .build();
 
-        assertTrue(house.hasGarden());
         assertFalse(house.hasGarage());
+        assertTrue(house.hasGarden());
         assertFalse(house.hasSwimmingPool());
         assertFalse(house.hasFancyStatues());
     }
+
+    @Test
+    void shouldEnableGarageOnly_whenWithSwimmingPool() {
+        DefaultHouseBuilder builder = new DefaultHouseBuilder();
+
+        House house = builder
+                .reset()
+                .withSwimmingPool()
+                .build();
+
+        assertTrue(house.hasSwimmingPool());
+        assertFalse(house.hasGarden());
+        assertFalse(house.hasFancyStatues());
+        assertFalse(house.hasGarden());
+
+    }
+
 }
-
-
