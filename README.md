@@ -42,7 +42,7 @@ src
 ---
 
 
-## 📈 Cobertura de pruebas (≥ 70%) — **inserta aquí tu captura**
+## 📈 Cobertura de pruebas (≥ 70%) 
 
 
 <img width="335" height="260" alt="builder-cover" src="https://github.com/user-attachments/assets/cf2bfc61-2a62-464d-89c8-6ca94b0f581a" />
