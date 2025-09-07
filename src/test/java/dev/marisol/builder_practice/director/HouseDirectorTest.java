@@ -48,4 +48,17 @@ class HouseDirectorTest {
         assertTrue(house.hasSwimmingPool());
         assertFalse(house.hasFancyStatues());
     }
+
+     @Test
+    void shouldBuildHouseWithGardenPreset_whenDirectorBuildsFancyStatuesVariant() {
+        HouseBuilder builder = new DefaultHouseBuilder();
+        HouseDirector director = new HouseDirector(builder);
+
+        House house = director.buildHouseWithFancyStatues();
+
+        assertFalse(house.hasGarage());
+        assertFalse(house.hasGarden());
+        assertFalse(house.hasSwimmingPool());
+        assertTrue(house.hasFancyStatues());
+    }
 }
