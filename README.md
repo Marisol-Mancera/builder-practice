@@ -49,7 +49,7 @@ src
 
 ---
 
-## 📘 Diagrama de clases (Mermaid) — **debe corresponder al código**
+## 📘 Diagrama de clases (Mermaid) 
 
 <img width="1188" height="937" alt="Diagrama-builder drawio" src="https://github.com/user-attachments/assets/1f61e4c4-d2ca-4024-9867-72f5c88ca00b" />
 
