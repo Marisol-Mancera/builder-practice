@@ -2,8 +2,12 @@
 
 Práctica del patrón **Builder** aplicada a la entidad `House`, permitiendo construir **variantes** de casa (garage, garden, swimmingPool, fancyStatues) de forma **flexible**, **escalable** y **desacoplada**.
 
-> **Stack:** Java **21**, Spring Boot, JUnit 5.  
-> **Objetivo:** aplicar correctamente el patrón Builder + **≥ 70%** de cobertura + **diagrama de clases** integrado en este README.
+---
+
+## Requisitos previos
+- **Java 21**
+- **Maven** 3.9+
+- IDE a elección (IntelliJ / VS Code / Eclipse)
 
 ---
 
@@ -55,6 +59,14 @@ src
 
 ---
 
+## Buenas prácticas aplicadas
+- **Separación de responsabilidades** por paquetes: `entities`, `builder`, `director`.
+- **Encapsulación**: campos privados; lectura con getters y `hasX()` para booleanos.
+- **Builder fluido**: métodos encadenables y `build()` para producir el objeto final.
+- **Director**: recetas que evitan duplicación y clarifican el proceso de construcción.
+- **Tests AAA**: casos para construcción por defecto, asignación de `rooms/floors` y activación individual de extras.
+
+---
 
 ## Autoría
 **Marisol Mancera**
