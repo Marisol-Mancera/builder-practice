@@ -37,7 +37,7 @@ class HouseDirectorTest {
     }
 
     @Test
-    void shouldBuildHouseWithGardenPreset_whenDirectorBuildsSwimmingPoolVariant() {
+    void shouldBuildHouseWithSwimmingPoolPreset_whenDirectorBuildsSwimmingPoolVariant() {
         HouseBuilder builder = new DefaultHouseBuilder();
         HouseDirector director = new HouseDirector(builder);
 
@@ -50,7 +50,7 @@ class HouseDirectorTest {
     }
 
      @Test
-    void shouldBuildHouseWithGardenPreset_whenDirectorBuildsFancyStatuesVariant() {
+    void shouldBuildHouseWithFancyStatuesPreset_whenDirectorBuildsFancyStatuesVariant() {
         HouseBuilder builder = new DefaultHouseBuilder();
         HouseDirector director = new HouseDirector(builder);
 
